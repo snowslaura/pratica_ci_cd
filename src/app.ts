@@ -6,7 +6,7 @@ app.use(json());
 
 app.get("/students", async (req: Request, res: Response) => {
   const students = await prisma.student.findMany();
-  console.log("heroku");
+  console.log("heroku deplooy");
   
   res.send(students);
 });
